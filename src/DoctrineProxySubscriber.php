@@ -30,7 +30,7 @@ class DoctrineProxySubscriber extends BaseDoctrineProxySubscriber
     /**
      * {@InheritDoc}
      */
-    public function onPreSerialize(PreSerializeEvent $event)
+    public function onPreSerialize(PreSerializeEvent $event) : void
     {
         $object = $event->getObject();
         $type = $event->getType();
